@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/login_screen_fragment.xml" value="0.17916666666666667" />
-        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/onboarding1_layout_resource_file.xml" value="0.22333333333333336" />
-        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/onboarding2_layout_resource_file.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.22333333333333336" />
+        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
+        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/login_screen_fragment.xml" value="0.3" />
+        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/onboarding1_layout_resource_file.xml" value="0.25" />
+        <entry key="..\:/Users/keyar/AndroidStudioProjects/app/src/main/res/layout/onboarding2_layout_resource_file.xml" value="0.3" />
       </map>
     </option>
   </component>
