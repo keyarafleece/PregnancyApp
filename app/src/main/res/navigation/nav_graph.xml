@@ -42,5 +42,53 @@
         <action
             android:id="@+id/action_loginScreen_to_onboardingTwo"
             app:destination="@id/onboardingTwo" />
+        <action
+            android:id="@+id/action_loginScreen_to_beginningScreenFragment"
+            app:destination="@id/beginningScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beginningScreenFragment"
+        android:name="com.example.pregnancy_app.beginningScreenFragment"
+        android:label="fragment_beginning_screen"
+        tools:layout="@layout/fragment_beginning_screen" >
+        <action
+            android:id="@+id/action_beginningScreenFragment_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_beginningScreenFragment_to_weekListFragment"
+            app:destination="@id/weekListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weekListFragment"
+        android:name="com.example.pregnancy_app.WeekListFragment"
+        android:label="fragment_week_list"
+        tools:layout="@layout/fragment_week_list" >
+        <action
+            android:id="@+id/action_weekListFragment_to_beginningScreenFragment"
+            app:destination="@id/beginningScreenFragment" />
+        <action
+            android:id="@+id/action_weekListFragment_to_dayListFragment"
+            app:destination="@id/dayListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayListFragment"
+        android:name="com.example.pregnancy_app.DayListFragment"
+        android:label="fragment_day_list"
+        tools:layout="@layout/fragment_day_list" >
+        <action
+            android:id="@+id/action_dayListFragment_to_weekListFragment"
+            app:destination="@id/weekListFragment" />
+        <action
+            android:id="@+id/action_dayListFragment_to_affirmationDisplayFragment"
+            app:destination="@id/affirmationDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/affirmationDisplayFragment"
+        android:name="com.example.pregnancy_app.AffirmationDisplayFragment"
+        android:label="fragment_affirmation_display"
+        tools:layout="@layout/fragment_affirmation_display" >
+        <action
+            android:id="@+id/action_affirmationDisplayFragment_to_dayListFragment"
+            app:destination="@id/dayListFragment" />
     </fragment>
 </navigation>

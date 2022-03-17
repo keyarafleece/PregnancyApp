@@ -49,4 +49,7 @@ dependencies {
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")
     implementation("androidx.navigation:navigation-ui-ktx:2.4.1")
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
 }
