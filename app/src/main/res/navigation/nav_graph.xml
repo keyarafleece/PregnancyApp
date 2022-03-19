@@ -7,27 +7,18 @@
 
     <fragment
         android:id="@+id/onboardingOne"
-        android:name="com.example.pregnancy_app.OnboardingOne"
-        android:label="OnboardingOne" >
-        <action
-            android:id="@+id/action_onboardingOne_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+        android:name="com.example.pregnancy_app.ui.OnboardingOne"
+        android:label="OnboardingOne"
+        tools:layout="@layout/onboarding1_list_layout">
         <action
             android:id="@+id/action_onboardingOne_to_onboardingTwo"
             app:destination="@id/onboardingTwo" />
     </fragment>
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="com.example.pregnancy_app.WelcomeFragment"
-        android:label="WelcomeFragment" >
-        <action
-            android:id="@+id/action_welcomeFragment_to_onboardingOne"
-            app:destination="@id/onboardingOne" />
-    </fragment>
-    <fragment
         android:id="@+id/onboardingTwo"
-        android:name="com.example.pregnancy_app.OnboardingTwo"
-        android:label="OnboardingTwo" >
+        android:name="com.example.pregnancy_app.ui.OnboardingTwo"
+        android:label="OnboardingTwo"
+        tools:layout="@layout/onboarding2_layout_resource_file">
         <action
             android:id="@+id/action_onboardingTwo_to_loginScreen"
             app:destination="@id/loginScreen" />
@@ -37,8 +28,9 @@
     </fragment>
     <fragment
         android:id="@+id/loginScreen"
-        android:name="com.example.pregnancy_app.LoginScreen"
-        android:label="LoginScreen" >
+        android:name="com.example.pregnancy_app.ui.LoginScreen"
+        android:label="LoginScreen"
+        tools:layout="@layout/login_screen_fragment">
         <action
             android:id="@+id/action_loginScreen_to_onboardingTwo"
             app:destination="@id/onboardingTwo" />
@@ -90,5 +82,14 @@
         <action
             android:id="@+id/action_affirmationDisplayFragment_to_dayListFragment"
             app:destination="@id/dayListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.pregnancy_app.ui.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_onboardingOne"
+            app:destination="@id/onboardingOne" />
     </fragment>
 </navigation>
