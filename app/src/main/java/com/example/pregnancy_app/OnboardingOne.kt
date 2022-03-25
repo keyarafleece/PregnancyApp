@@ -37,5 +37,6 @@ class OnboardingOne : Fragment(), OnboardRecyclerViewAdapter.Listener {
     override fun onImageClicked(index: Int, view: View) {
         TODO("not yet implemented")
     }
+}
 
 }

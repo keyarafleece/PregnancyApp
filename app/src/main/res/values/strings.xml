@@ -4,4 +4,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="start">Start</string>
     <string name="day_7">Day 7</string>
+    <string name="title_place_holder">Title Place Holder</string>
+    <string name="content_description_placeholder">Content Description Placeholder</string>
+    <string name="affirmation_placeholder">affirmation_placeholder</string>
+    <string name="short_affirmation_placeholder">short_affirmation_placeholder</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

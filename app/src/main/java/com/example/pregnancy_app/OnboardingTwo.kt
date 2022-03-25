@@ -21,9 +21,11 @@ class OnboardingTwo: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         view.findViewById<Button>(R.id.button_onboarding2).setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_onboardingTwo_to_loginScreen)
 
         }
+
     }
 }

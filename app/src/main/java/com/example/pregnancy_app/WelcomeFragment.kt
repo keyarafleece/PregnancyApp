@@ -1,5 +1,6 @@
 package com.example.pregnancy_app.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,8 +23,14 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         view.findViewById<Button>(R.id.button_activity_main).setOnClickListener { view ->
+            /*
+            val intent = Intent (getActivity(), MainActivity2::class.java)
+            getActivity()?.startActivity(intent)
+             */
             view.findNavController().navigate(R.id.action_welcomeFragment_to_onboardingOne)
+
         }
     }
 }
