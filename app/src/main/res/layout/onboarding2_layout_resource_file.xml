@@ -9,16 +9,16 @@
         android:id="@+id/button_onboarding2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
         android:text="Next"
+        android:layout_marginBottom="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="340dp"
-        android:layout_height="427dp"
+        android:layout_width="248dp"
+        android:layout_height="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +28,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="342dp"
+        android:layout_height="98dp"
+        android:layout_margin="30dp"
         android:layout_marginTop="35dp"
-        android:text="TextView"
+        android:text="Each week, you will be provided with affirmations to help you focus on your mental well-being throughout this journey of creating new life."
+        android:textAlignment="center"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button_onboarding2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.105" />
 </androidx.constraintlayout.widget.ConstraintLayout>
