@@ -1,17 +1,16 @@
-package com.example.pregnancy_app.ui
+package com.example.pregnancy_app
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.pregnancy_app.R
-import com.example.pregnancy_app.adapter.OnboardRecyclerViewAdapter
 
-class OnboardingOne : Fragment(), OnboardRecyclerViewAdapter.Listener {
-    private lateinit var adapter: OnboardRecyclerViewAdapter
+class OnboardingOne: Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,20 +22,11 @@ class OnboardingOne : Fragment(), OnboardRecyclerViewAdapter.Listener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val affirmationList = mutableListOf("My pregnant body is absolutely beautiful",
-        "I rest when I need to",
-        "I'm important",
-        "I am a strong woman",
-        "Making mistakes is OK",
-        "My baby senses the peace I feel")
-        adapter = OnboardRecyclerViewAdapter(affirmationList, this)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.photos_grid)
-        recyclerView.adapter = adapter
-    }
 
-    override fun onImageClicked(index: Int, view: View) {
-        TODO("not yet implemented")
-    }
-}
+        view.findViewById<Button>(R.id.button_onboarding1).setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_onboardingOne_to_onboardingTwo)
 
+
+        }
+    }
 }

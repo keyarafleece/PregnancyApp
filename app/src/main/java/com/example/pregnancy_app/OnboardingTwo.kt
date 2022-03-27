@@ -1,4 +1,4 @@
-package com.example.pregnancy_app.ui
+package com.example.pregnancy_app
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.pregnancy_app.R
 
 class OnboardingTwo: Fragment() {
     override fun onCreateView(

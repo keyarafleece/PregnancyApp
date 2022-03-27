@@ -1,4 +1,4 @@
-package com.example.pregnancy_app.ui
+package com.example.pregnancy_app
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
-import com.example.pregnancy_app.R
+
+
+
 
 class WelcomeFragment : Fragment() {
+
+
+    /* override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+
+        }
+    }
+
+     */
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,5 +44,8 @@ class WelcomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_welcomeFragment_to_onboardingOne)
 
         }
-    }
-}
+
+
+
+                }
+            }
